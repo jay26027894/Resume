@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
     <header>
         <nav>
-            <div class="left"> Portfolio</div>
+            <div class="left">Portfolio</div>
             <div class="right">
                 <ul>
-                      <li> <a href="">Home</a> </li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><a id="home-link" href="#firstsection">Home</a></li>
+                    <li><a id="about-link" href="#secondsection">About</a></li>
+                    <li><a id="projects-link" href="#fourthsection">Projects</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="firstsection">
+        <section id="firstsection" class="firstsection">
             <div class="leftsection">
                 Hi, My name is <span class="purple">Jay</span>
                 <div>and I am a</div>
@@ -34,14 +34,14 @@
                 <img src="bg.png.png" alt="">
             </div>
         </section>
-        <section class="secondsection">
+        <section id="secondsection" class="secondsection">
             <hr>
             <h1>About</h1>
             <span class="textgray">
                 Hello, I'm Jay Bontawar, currently pursuing BTech in Computer Science with a specialization in IoT. My passion lies in web development, where I enjoy creating meaningful and interactive digital experiences. Beyond coding, I find joy in watching movies and expressing my thoughts through poetry. Previously, I served as Cultural Incharge in Nexus Forum of DIC Dept, and I currently hold the position of Vice President in Nexus Forum.
             </span>
         </section>
-        <section class="thirdsection">
+        <section id="thirdsection" class="thirdsection">
             <hr>
             <h1>Skills</h1>
             <div class="skills-container">
@@ -68,9 +68,8 @@
                     </ul>
                 </div>
             </div>
-            
         </section>
-        <section class="fourthsection">
+        <section id="fourthsection" class="fourthsection">
             <hr>
             <h1>Experience</h1>
             <div class="experience-item">
@@ -84,7 +83,7 @@
                 <p>Highlight your responsibilities and contributions as Vice President.</p>
             </div>
         </section>
-        <section class="fifthsection">
+        <section id="fifthsection" class="fifthsection">
             <hr>
             <h1>Projects</h1>
             <div class="project">
@@ -104,34 +103,29 @@
                     <li>JavaScript</li>
                 </ul>
             </div>
-            
-            
         </section>
-       
-        
     </main>
     <footer>
         <div class="footer">
             <div class="footerfirst">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="#fifthsection">Projects</a></li>
                 </ul>
-
             </div>
             <div class="footersecond">
                 <ul>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Linkdein</a></li>
+                    <li><a href="mailto:jay534050@gmail.com?subject=Contact%20Request">Contact</a></li>
+                    <li><a href="https://x.com/JBontawar?t=2-S6RmxvFdNdX35WubVvTA&s=09">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/jay-bontawar-b814a224a/">LinkedIn</a></li>
                 </ul>
             </div>
             <div class="footerthird">
                 <ul>
-                    <li><a href="">Github</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
+                    <li><a href="https://github.com/jay26027894">Github</a></li>
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#firstsection">Home</a></li>
                 </ul>
             </div>
             <div class="footerfourth"></div>
@@ -139,7 +133,6 @@
         <div class="textcenter">
             www.jbportfolio.com | All rights reserved
         </div>
-
     </footer>
     <section class="thank-you">
         <div class="container">
@@ -154,6 +147,27 @@
           strings: ['Web developer','Web designer'],
           typeSpeed: 60,
         });
-      </script>
+    </script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        document.getElementById('home-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollToSection('#firstsection');
+        });
+
+        document.getElementById('about-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollToSection('#secondsection');
+        });
+
+        document.getElementById('projects-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollToSection('#fourthsection');
+        });
+    </script>
 </body>
 </html>
