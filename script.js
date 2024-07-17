@@ -38,4 +38,25 @@
 </nav>
 
 */
+ <script>
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        document.getElementById('home-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollToSection('#firstsection');
+        });
+
+        document.getElementById('about-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollToSection('#secondsection');
+        });
+
+        document.getElementById('projects-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollToSection('#fourthsection');
+        });
+    </script>
 
