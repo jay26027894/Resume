@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 110px 0;
+}
+.firstsection >div{
+    width: 30%;
+}
+.leftsection{
+    
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3rem;
+    
+}
+.leftsection .btn{
+    background-color:rgb(0, 252, 252);;
+    padding: 4px;    
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+.leftsection .btn:hover{
+    background-color:rgb(156, 242, 242);
+    font-size: 1.02rem;
+}
+.rightsection {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.rightsection img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.rightsection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.rightsection:hover::before {
+    opacity: 1;
+}
+
+.purple{
+    color: rgb(0, 252, 252);
+}
+#element{
+    color: rgb(252, 0, 218);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 35px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 35px;
+    
+}
+nav ul li a:hover{
+    color: rgb(90, 219, 219);
+    margin: 0 35px;
+    font-size: 1.03rem;
+    
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+}
+
+main hr{
+    background-color: aqua;
+    border: 0;
+    height: 2px;
+    margin: 40px 0px;
+    width: 100%;
+}
+.secondsection h1{
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.textgray{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.thirdsection{
+    max-width: 80vw;
+    margin: auto;
+}
+.thirdsection h1{
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soft-skills, .technical-skills {
+    flex: 1;
+    margin: 20px;
+}
+
+.soft-skills ul, .technical-skills ul {
+    
+    padding: 0;
+}
+
+.soft-skills li, .technical-skills li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.technical-skills li i {
+    margin-right: 5px;
+}
+
+.soft-skills:hover{
+    font-size: 1.04rem;
+    color: gray;
+}
+.technical-skills:hover {
+    font-size: 1.04rem;
+    color: gray;
+}
+.fourthsection{
+    max-width: 80vw;
+    margin: auto;
+}
+.fourthsection h1{
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.fourthsection {
+    margin-bottom: 30px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.experience-details {
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.experience-item > p:hover {
+    color: #36fdc5;
+    margin-bottom: 10px;
+    
+}
+.fifthsection{
+    max-width: 80vw;
+    margin: auto;
+}
+.fifthsection h1{
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.project {
+    margin-bottom: 20px;
+}
+.project h2{
+    margin: 10px 0px;
+}
+.project p{
+    margin: 10px 0px;
+}
+
+.project-skills {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-skills li {
+    background-color: #dbdbd8;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.project-skills li:hover {
+    background-color: #dbdbd8;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.05rem;
+}
+footer{
+    background-color: rgb(16, 15, 15);
+    height: 150px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    padding: 30px 200px;
+    justify-content: space-between;
+}
+.footer ul{
+    text-align: center;
+}
+.footer ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.footer ul li a:hover {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(87, 100, 99);
+    font-size: 1.05rem;
+}
+.textcenter{
+    text-align: center;
+    color: gray;
+}
+.thank-you {
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center;
+    opacity: 0; 
+    animation: fade-in 3s ease forwards; 
+}
+
+.thank-you .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.thank-you-message {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    opacity: 0; 
+    animation: slide-up 1s ease forwards; 
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slide-up {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
